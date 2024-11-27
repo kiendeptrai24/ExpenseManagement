@@ -90,6 +90,7 @@ public class Expenditure extends Fragment implements SetupProperty {
             public void onClick(View view) {
                 update();
                 loadItem();
+                TextEmpty();
             }
         });
         btnDelete_expend.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +104,7 @@ public class Expenditure extends Fragment implements SetupProperty {
                     Toast.makeText(getContext(), "Delete error", Toast.LENGTH_SHORT).show();
                 }
                 loadItem();
+                TextEmpty();
             }
         });
         btn_add_expend.setOnClickListener(new View.OnClickListener() {

@@ -107,6 +107,7 @@ public class Revenue extends Fragment implements SetupProperty {
             public void onClick(View view) {
                 update();
                 loadItem();
+                TextEmpty();
             }
         });
         btnDelete.setOnClickListener(new View.OnClickListener() {
@@ -119,6 +120,7 @@ public class Revenue extends Fragment implements SetupProperty {
                     Toast.makeText(getContext(), "Delete error", Toast.LENGTH_SHORT).show();
                 }
                 loadItem();
+                TextEmpty();
             }
         });
         list_revenue.setOnItemClickListener(new AdapterView.OnItemClickListener() {
